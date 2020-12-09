@@ -3,5 +3,5 @@ export function toNumber(s) {
 }
 
 export function stringToArray(s) {
-  return s.split('');
+  return [...s];
 }

@@ -15,3 +15,7 @@ export function product(x) {
 export function sum(x) {
   return x.reduce(add, 0);
 }
+
+export function countWhereTrue(list, predicate) {
+  return list.reduce((count, x) => predicate(x) ? count + 1: count, 0);
+}
